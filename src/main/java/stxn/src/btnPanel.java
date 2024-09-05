@@ -11,6 +11,7 @@ public class btnPanel extends JPanel {
 
     // Border
     Border emptyBorder = BorderFactory.createEmptyBorder();
+    Border allAroundBorder = BorderFactory.createMatteBorder(1, 1 , 1 ,1, Color.BLACK);
 
     // Constructor
     btnPanel(){
@@ -19,14 +20,16 @@ public class btnPanel extends JPanel {
         // Add task Button
 
         addTask = new JButton("Add Task");
-        addTask.setBorder(emptyBorder);
-        addTask.setFont(new Font("Consolas", Font.BOLD, 20));
+        addTask.setBorder(allAroundBorder);
+        addTask.setPreferredSize(new Dimension(150, 20));
+        addTask.setFont(new Font("Consolas", Font.BOLD, 15));
 
         // Clear finished tasks Button
 
         clearCompletedTasks = new JButton("Clear Completed");
-        clearCompletedTasks.setBorder(emptyBorder);
-        clearCompletedTasks.setFont(new Font("Consolas", Font.BOLD, 20));
+        clearCompletedTasks.setPreferredSize(new Dimension(150, 20));
+        clearCompletedTasks.setBorder(allAroundBorder);
+        clearCompletedTasks.setFont(new Font("Consolas", Font.BOLD, 15));
 
         this.add(addTask);
         this.add(Box.createHorizontalStrut(20));
