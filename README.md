@@ -1,1 +1,1 @@
-My simple to do task app made in java.
+My simple to task app made in java.
