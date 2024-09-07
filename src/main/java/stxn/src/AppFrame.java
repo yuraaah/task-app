@@ -7,9 +7,9 @@ import java.awt.event.MouseEvent;
 
 public class AppFrame extends JFrame {
 
-    private titleBar title;
-    private btnPanel btnPanel;
-    private list list;
+    private TitleBar title;
+    private BtnPanel btnPanel;
+    private List list;
 
     private JButton addTask;
     private JButton clearCompletedTasks;
@@ -21,9 +21,9 @@ public class AppFrame extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
 
-        title = new titleBar();
-        list = new list();
-        btnPanel = new btnPanel();
+        title = new TitleBar();
+        list = new List();
+        btnPanel = new BtnPanel();
         this.add(title, BorderLayout.NORTH); // Headline Title
         this.add(btnPanel, BorderLayout.SOUTH); // Bottom buttons
         this.add(list, BorderLayout.CENTER); // Panel for tasks
@@ -41,7 +41,7 @@ public class AppFrame extends JFrame {
             public void mouseClicked(MouseEvent e) {
 
                 // Adds tasks
-                task task = new task();
+                Task task = new Task();
                 list.add(task);
 
                 // updates list index numbers

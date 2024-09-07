@@ -3,10 +3,10 @@ package stxn.src;
 import javax.swing.*;
 import java.awt.*;
 
-public class list extends JPanel {
+public class List extends JPanel {
 
     // Constructor
-    list(){
+    List(){
 
         // Layout
         GridLayout layout = new GridLayout(10,1);
@@ -21,8 +21,8 @@ public class list extends JPanel {
          Component[] listItems = this.getComponents();
 
          for(int i = 0; i < listItems.length; i++){
-             if (listItems[i] instanceof task){
-                 ((task)listItems[i]).changeIndex(i);
+             if (listItems[i] instanceof Task){
+                 ((Task)listItems[i]).changeIndex(i);
              }
         }
     }
@@ -31,8 +31,8 @@ public class list extends JPanel {
 
     public void removeCompletedTasks() {
         for(Component c : getComponents()) {
-            if(c instanceof task) {
-                if(((task)c).getState()) {
+            if(c instanceof Task) {
+                if(((Task)c).getState()) {
                     remove(c);
                     updateNumbers();
                 }

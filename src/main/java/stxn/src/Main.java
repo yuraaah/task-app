@@ -1,6 +1,4 @@
-package stxn;
-
-import stxn.src.AppFrame;
+package stxn.src;
 
 public class Main {
 

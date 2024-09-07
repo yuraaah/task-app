@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.font.TextAttribute;
 import java.text.AttributedString;
 
-public class task extends JPanel {
+public class Task extends JPanel {
 
     private JLabel index;
     private JTextField taskName;
@@ -14,7 +14,7 @@ public class task extends JPanel {
     private boolean checked;
 
     // Constructor
-    task(){
+    Task(){
         this.setPreferredSize(new Dimension(40, 20));
         this.setLayout(new BorderLayout());
 

@@ -4,7 +4,7 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-public class btnPanel extends JPanel {
+public class BtnPanel extends JPanel {
     private JButton addTask;
     private JButton clearCompletedTasks;
 
@@ -14,7 +14,7 @@ public class btnPanel extends JPanel {
     Border allAroundBorder = BorderFactory.createMatteBorder(1, 1 , 1 ,1, Color.BLACK);
 
     // Constructor
-    btnPanel(){
+    BtnPanel(){
         this.setPreferredSize(new Dimension(400, 30));
 
         // Add task Button

@@ -3,9 +3,9 @@ package stxn.src;
 import javax.swing.*;
 import java.awt.*;
 
-public class titleBar extends JPanel {
+public class TitleBar extends JPanel {
     // Constructor
-    titleBar(){
+    TitleBar(){
         this.setPreferredSize(new Dimension(400, 40));
         this.setBorder(BorderFactory.createMatteBorder(0, 0 , 1 ,0, Color.BLACK));
 
