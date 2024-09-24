@@ -9,4 +9,5 @@ This was my very first attempt at anything with Java. This project took me a few
 - [X] GUI
   - [X] Adding tasks
     - [X] Removing tasks
+- [ ] GUI Improve 
 
